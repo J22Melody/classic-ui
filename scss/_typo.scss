@@ -219,23 +219,10 @@ strong, b{
   cursor: move;
 }
 
-.clearfix:before, .clearfix:after{
-  content: "";
-  display: table;
-}
-
-.clearfix:after{
-  clear: both
-}
-
-.clearfix{
-  zoom: 1
-}
-
 h1, h2, h3, h4, h5, h6{
   font-family: "Microsoft Yahei";
   color: $title-color;
-  margin-bottom: 0.5em; 
+  margin-bottom: 0.5em;
 }
 
 h1{

@@ -1,33 +1,4 @@
-//向下箭头
-.arrow{
-  width: 6px;height: 3px;display: inline-block;margin-left: 5px;margin-bottom: 2px;
-  background: url('../../images/common/header-top-nav-arrow.png') no-repeat center;
-}
-//button
-.btn{
-  background: #358227;padding: 6px 24px;cursor: pointer;color: #cfe6cd;font-size: 16px;font-family: "Microsoft Yahei";
-  text-align: center;@include text-shadow(0 1px 1px rgba(0,0,0,0.7));
-  @include box-shadow(0 2px 3px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(255,255,255,0.3) inset);@include border-radius(3px);
-  border: 1px solid #276b1a;border-color:{bottom: #2e7620;top: #1f5e13;}
-
-  &:active{
-    background: #286d1a;
-  }
-}
-
-.btn1{
-  background: #fdf1ed;padding: 4px 14px;color: #b3705b;cursor: pointer;border: 1px solid #e8b5a5;@include border-radius(1px);
-}
-
-.btn2{
-  background: #dbf1dc;padding: 1px 8px;color: #377439;cursor: pointer;border: 1px solid #83b284;@include border-radius(1px);
-
-  &:active{
-    background: #91b893;
-  }
-}
-
-//面包屑
+// breadcrumbs
 .crumb{
   li{
     position: relative;display: inline;
@@ -68,7 +39,7 @@
   }
 }
 
-//slide
+// slider
 .slide-prompt{
   li{
     display: inline-block;width: 25px;height: 5px;background: #c0cdc0;margin-right: 2px;
@@ -156,6 +127,9 @@
     }
   }
 }
-.captcha-img:hover{
-  cursor: pointer;
-}
+
+// star
+
+// modal
+
+// file upload

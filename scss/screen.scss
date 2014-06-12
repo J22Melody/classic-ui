@@ -7,9 +7,13 @@
 @import "variables";
 @import "mixins";
 
+// Base classes
+@import "base";
+
 // Typo
 // with help from https://github.com/sofish/typo.css
 @import "typo";
 
-@import "base";
+// UI compotents
+@import "buttons";
 @import "components";
