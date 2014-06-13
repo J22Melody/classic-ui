@@ -130,6 +130,42 @@
 
 // star
 
+.star{
+  width: 100px;
+  height: 17px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+
+  .star-off{
+    background: url("../images/star-off.png") no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .star-on{
+    background: url("../images/star-on.png") no-repeat;
+    width: 0% ;
+    height: 100%;
+    position: absolute;
+  }
+
+  .star-select{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+
+    span{
+      width: 16%;
+      height: 100%;
+      display: inline-block;
+      margin-left: 1%;
+    }
+  }
+}
+
 // modal
 
 // file upload
