@@ -1,45 +1,89 @@
 // breadcrumbs
-.crumb{
-  li{
-    position: relative;display: inline;
 
-    .crumb-li-hover{
-      position: absolute;width: 86px;height: 34px;background: #fff;top: -10px;left: -16px;z-index: 1;
-      @include box-shadow(-1px 0 1px -1px #aaa,0 -1px 1px -1px #aaa,1px 0 1px -1px #aaa);
+.breadcrumbs{
+  >li{
+    display: inline;
+
+    &:after{
+      content: ">";
+      margin:{
+        left: 14px;
+        right: 16px;
+      }
+      color: #aaa;
     }
 
-    a{
-      position:relative;z-index: 2;
+    &:last-of-type{
+      &:after{
+        content: none;
+        margin: 0;
+      }
     }
 
-    .crumb-li-subnav{
-      position: absolute;width:166px;background: #fff;left: -16px;top: 24px;@include box-shadow(0 0 1px #aaa);
+  }
+}
 
-      li{
-        margin: 2px;padding-left: 12px;display: block;cursor: pointer;height: 28px;line-height: 28px;
+// menu
 
-        a{
-          color: #787a78;
-        }
+.menu{
+  position: relative;
+  cursor: pointer;
 
-        &:hover{
-          background: #e9e9e9;
-        }
+  .menu-title{
+    display: inline-block;
+    padding: 4px 20px;
+    padding-bottom: 6px;
+    z-index: 11;
+    position: relative;
+    background: #fff;
+  }
 
+  .menu-title:after{
+    @include css-triangle(4px, #aaa, top);
+    position: relative;
+    top: 2px;
+    margin-left: 8px;
+  }
+
+  .menu-content{
+    display: none;
+    position: absolute;
+    background: #fff;
+    z-index: 10;
+    margin-top: -2px;
+    @include box-shadow(-1px 0 1px -1px #aaa,1px 0 1px -1px #aaa,0 -1px 1px -1px #aaa);
+    border: {
+      bottom: 4px solid #e9e9e9;
+    }
+
+    li{
+      padding: 4px 20px;
+      padding-left: 18px;
+      margin: 2px;
+
+      &:hover{
+        background: #e9e9e9;
       }
 
-      .crumb-li-subnav-footer{
-        height: 4px;background: #e9e9e9;position: relative;width: 100%;
+      a{
+        display: block;
       }
     }
   }
 
-  .crumb-next{
-    margin:{left:14px;right: 16px;}display: inline;color: #aaa;
+  &:hover{
+    .menu-title{
+      @include box-shadow(-1px 0 1px -1px #aaa,1px 0 1px -1px #aaa,0 -1px 1px -1px #aaa);
+    }
+
+    .menu-content{
+      display: block;
+    }
   }
 }
 
 // slider
+
 .slide-prompt{
   li{
     display: inline-block;width: 25px;height: 5px;background: #c0cdc0;margin-right: 2px;
