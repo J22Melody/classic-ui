@@ -50,14 +50,12 @@ $(function(){
     }
     if(index === 0){
       $slider.find('.slider-prev').addClass('off');
-    }
-    if(index === 1){
+    }else{
       $slider.find('.slider-prev').removeClass('off');
     }
     if(index === maxIndex){
       $slider.find('.slider-next').addClass('off');
-    }
-    if(index === maxIndex - 1){
+    }else{
       $slider.find('.slider-next').removeClass('off');
     }
     var $content = $slider.find('.slider-content');
