@@ -209,7 +209,12 @@ figcaption{
   color: $classic-gray;
 }
 
-strong, b{
+b{
+  font-weight: normal;
+  color: $classic-gray;
+}
+
+strong{
   font-weight: bold;
   color: black;
 }

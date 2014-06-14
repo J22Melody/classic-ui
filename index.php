@@ -120,49 +120,72 @@
         <div class="clearfix">
           <ul class="slider-prompt">
           </ul>
-        </div>      
+        </div>
         <div class="slider-main">
           <div class="slider-prev off"></div>
           <div class="slider-next"></div>
           <div class="slider-content-wrapper">
             <ul class="slider-content">
+              <?php for ($i=1; $i<=14; $i++) { ?>
               <li>
                 <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
               </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
-              <li>
-                <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
-              </li>
+              <?php } ?>
             </ul>
           </div>
         </div>
       </div>
+
+      <br>
+
+      <form id="form_id" action="index.html" method="post">
+        <div class="form-cloud">
+          <label class="user">
+            邮箱<br>
+            <input type="email" name="email" >
+          </label>
+          <span class="notice">你常用的邮箱，用来登陆、找回密码等</span>
+        </div>
+        <div class="form-cloud">
+          <label class="user">
+            名字<br>
+            <input type="text" name="name">
+          </label>
+          <span class="notice">你在ClassIC的名字，中、英文字符均可</span>
+        </div>
+        <div class="form-cloud">
+          <label class="pass">
+            密码<br>
+            <input type="password" name="pass">
+          </label>
+          <span class="error">密码强度：弱</span>
+        </div>
+
+        <div class="form-sky">
+          <label>
+            <b>课程名</b>
+            <input type="text">
+          </label>
+          <span class="error">密码强度：弱</span>
+        </div>
+        <div class="form-sky">
+          <label>
+            <b>课程简介</b>
+            <textarea name="Name" rows="8" cols="40"></textarea>
+          </label>
+          <span class="notice">密码强度：弱</span>
+        </div>
+        <div class="form-sky">
+          <label>
+            <b>是否公开</b>
+            <select>
+              <option>是</option>
+              <option>否</option>
+            </select>
+          </label>
+          <span class="notice">密码强度：弱</span>
+        </div>
+      </form>
 
       <hr>
       <pre>
@@ -177,7 +200,7 @@
       </ul>
       <h6>《论语》</h6>
       <p class="t2">
-        <b>宋代</b>著名学者<u>朱熹</u>对此章评价极高，说它是 <mark>「入道之门，积德之基」</mark>。本章这三句话是人们非常熟悉的。历来的解释都是：学了以后，又时常温习和练习，不也高兴吗等等。三句话，一句一个意思，前后句子也没有什么连贯性。但也有人认为这样解释不符合原义，指出这里的「学」不是指学习，而是指学说或主张；「时」不能解为时常，而是时代或社会的意思，「习」不是温习，而是使用，引申为采用。而且，这三句话不是孤立的，而是前后相互连贯的。这三句的意思是：自己的学说，要是被社会采用了，那就太高兴了；退一步说，要是没有被社会所采用，可是很多朋友赞同我的学说，纷纷到我这里来讨论问题，我也感到快乐；再退一步说，即使社会不采用，人们也不理解我，我也不怨恨，这样做，不也就是君子吗？<small>（见《齐鲁学刊》1986年第6期文）</small> 这种解释可以自圆其说，而且也有一定的道理，供读者在理解本章内容时参考。
+        <strong>宋代</strong>著名学者<u>朱熹</u>对此章评价极高，说它是 <mark>「入道之门，积德之基」</mark>。本章这三句话是人们非常熟悉的。历来的解释都是：学了以后，又时常温习和练习，不也高兴吗等等。三句话，一句一个意思，前后句子也没有什么连贯性。但也有人认为这样解释不符合原义，指出这里的「学」不是指学习，而是指学说或主张；「时」不能解为时常，而是时代或社会的意思，「习」不是温习，而是使用，引申为采用。而且，这三句话不是孤立的，而是前后相互连贯的。这三句的意思是：自己的学说，要是被社会采用了，那就太高兴了；退一步说，要是没有被社会所采用，可是很多朋友赞同我的学说，纷纷到我这里来讨论问题，我也感到快乐；再退一步说，即使社会不采用，人们也不理解我，我也不怨恨，这样做，不也就是君子吗？<small>（见《齐鲁学刊》1986年第6期文）</small> 这种解释可以自圆其说，而且也有一定的道理，供读者在理解本章内容时参考。
       </p>
       <p class="t2">
         此外，在对「人不知，而不愠」一句的解释中，也有人认为，「人不知」的后面没有宾语，人家不知道什么呢？当时因为孔子有说话的特定环境，他不需要说出知道什么，别人就可以理解了，却给后人留下一个谜。有人说，这一句是接上一句说的，从远方来的朋友向我求教，我告诉他，他还不懂，我却不怨恨。这样，「人不知」就是「人家不知道我所讲述的」了。这样的解释似乎有些牵强。
