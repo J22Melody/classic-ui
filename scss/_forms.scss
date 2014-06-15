@@ -9,10 +9,10 @@
     input,textarea{
       background: #fff;
       outline: none;
+    }
 
-      &:-webkit-autofill {
-        @include box-shadow(0 0 0px 1000px white inset);
-      }
+    input:-webkit-autofill {
+      @include box-shadow(0 0 0px 1000px white inset);
     }
 
     textarea{
@@ -114,6 +114,10 @@
       }
       min-height: 26px;
     }
+  }
+
+  button{
+    margin-left: 100px;
   }
 
   .notice{

@@ -138,25 +138,25 @@
 
       <br>
 
-      <form id="form_id" action="index.html" method="post">
+      <form id="form_id" action="" method="get">
         <div class="form-cloud">
           <label class="user">
             邮箱<br>
-            <input type="email" name="email" >
+            <input type="email" name="email" required autofocus>
           </label>
           <span class="notice">你常用的邮箱，用来登陆、找回密码等</span>
         </div>
         <div class="form-cloud">
           <label class="user">
             名字<br>
-            <input type="text" name="name">
+            <input type="text" name="name" required pattern=".{1,10}" title="1到10个字符" maxlength="10">
           </label>
           <span class="notice">你在ClassIC的名字，中、英文字符均可</span>
         </div>
         <div class="form-cloud">
           <label class="pass">
             密码<br>
-            <input type="password" name="pass">
+            <input type="password" name="pass" required pattern=".{8,20}" required title="8到20个字符" maxlength="20">
           </label>
           <span class="error">密码强度：弱</span>
         </div>
@@ -184,6 +184,9 @@
             </select>
           </label>
           <span class="notice">密码强度：弱</span>
+        </div>
+        <div class="form-sky">
+          <button type="submit" class="btn-simple">提交修改</button>
         </div>
       </form>
 
