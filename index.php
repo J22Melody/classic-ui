@@ -7,7 +7,7 @@
 
         <link rel="stylesheet" href="stylesheets/classic-ui.css">
     </head>
-    <body>
+    <body style="padding: 10px;">
       <h1>h1 你好 Classic UI 我是雅黑！</h1>
       <h3>h3 你好 Classic UI 我是雅黑！</h3>
       <h6>h6 你好 Classic UI 我是雅黑！</h6>
@@ -188,6 +188,20 @@
         <div class="form-sky">
           <button type="submit" class="btn-simple">提交修改</button>
         </div>
+      </form>
+
+      <form class="form-yosimite" action="" method="get">
+          <input type="text" placeholder="发现你的课程" name="keyword" required>
+          <button type="submit" class="submit"></button>
+          <a href="" class="advanced-search">高级搜索</a>
+      </form>
+
+      <form class="form-mavericks" action="" method="get">
+          <div class="form-mavericks-wrapper">
+            <input type="text" placeholder="发现你的课程" name="keyword" required>
+            <button type="submit" class="submit"></button>
+            <a href="" class="advanced-search">高级搜索</a>
+          </div>      
       </form>
 
       <hr>

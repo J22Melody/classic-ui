@@ -1,3 +1,5 @@
+// normal form
+
 @mixin form-item(){
   display: block;
   margin-bottom: 20px;
@@ -126,6 +128,89 @@
 
   .error{
     color: red;
+  }
+}
+
+// search form
+
+.form-yosimite{
+  width: 640px;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  position: relative;
+  @include border-radius(2px);
+  @include box-shadow(0 0 1px #aaa) ;
+
+  input[type='text']{
+    outline: none;
+    border: none;
+    width: 580px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 20px;
+    position: relative;
+    top: 2px;
+    color: #787a78;
+  }
+
+  .submit{
+    border: none;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    background: url("../images/magnify.png") no-repeat center;
+  }
+
+  .advanced-search{
+    position: absolute;
+    right: -61px;
+  }
+}
+
+.form-mavericks{
+  background: rgba(211,211,211,0.4);
+  width: 380px;
+  padding: 5px;
+  position: relative;
+  @include border-radius(4px);
+  @include box-shadow(0 1px 4px rgba(0,0,0,0.4));
+
+  .form-mavericks-wrapper{
+    height: 40px;
+    background: #fff;
+    position: relative;
+    line-height: 40px;
+
+    input[type='text']{
+      outline: none;
+      border: none;
+      width: 310px;
+      height: 30px;
+      font-size: 18px;
+      margin-left: 20px;
+      position: relative;
+      color: #787a78;
+      display: inline-block;
+      top: 2px;
+    }
+
+    .submit{
+      border: none;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      cursor: pointer;
+      background: url("../images/magnify.png") no-repeat center;
+      top: 10px;
+    }
+  }
+
+  .advanced-search{
+    position: absolute;
+    right: -66px;
   }
 }
 
