@@ -126,9 +126,12 @@
           <div class="slider-next"></div>
           <div class="slider-content-wrapper">
             <ul class="slider-content">
-              <?php for ($i=1; $i<=14; $i++) { ?>
-              <li>
+              <?php for ($i=0; $i<=13; $i++) { ?>
+              <li class="float-glass-trigger">
                 <img src="http://img3.douban.com/mpic/s1525451.jpg" alt="" />
+                <div class="float-glass<?php if ($i%4 > 1) { ?> float-glass-left<?php } ?>">
+
+                </div>
               </li>
               <?php } ?>
             </ul>
@@ -201,7 +204,7 @@
             <input type="text" placeholder="发现你的课程" name="keyword" required>
             <button type="submit" class="submit"></button>
             <a href="" class="advanced-search">高级搜索</a>
-          </div>      
+          </div>
       </form>
 
       <hr>

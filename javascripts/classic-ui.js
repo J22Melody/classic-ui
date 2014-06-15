@@ -82,3 +82,19 @@ $(function(){
     to($slider, $(this).data('num'))
   });
 });
+
+// float glass
+
+$(document).on('mouseenter','.float-glass-trigger',function(){
+  $('.float-glass-trigger').removeClass('hover');
+  $(this).addClass('hover').attr('hover','');
+});
+
+$(document).on('mouseleave','.float-glass-trigger',function(){
+  var that = $(this).removeAttr('hover');
+  setTimeout(function(){
+    if(!(that.attr('hover') === '')){
+      that.removeClass('hover'); 
+    }
+  },200);
+});
